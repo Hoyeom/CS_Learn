@@ -8,7 +8,9 @@ namespace CSharp
         {
             
         }
-
+        
+        // int ret1 = Add(b: 3, a: 2, d: 5f);  // 이게...C#?... 좋다
+        
         #region DATA
 
         // byte(1바이트 0~255), short(2바이트 -3만~3만), int(4바이트 -21억~21억), long(8바이트)
@@ -161,6 +163,58 @@ namespace CSharp
         //     Console.WriteLine($"3으로 나뉘는 숫자 발견 {i.ToString()}");
         // }
 
+        #endregion
+
+        #region Method
+
+        // static void Divide(int a, int b, out int resualt1,out int resualt2)
+        // {
+        //     resualt1 = a / b;
+        //     resualt2 = a % b;
+        // }
+        
+        // static void Swap(ref int a, ref int b)
+        // {
+        //     // 이게...스왑? C# 7
+        //     (a, b) = (b, a);
+        // }
+
+        // static void AddOne(ref int number)
+        // {
+        //     number += 1;
+        // }
+        
+        // static int AddOne(int nunber)
+        // {
+        //     return nunber + 1;
+        // }
+
+        // public static void Main(string[] args)
+        // {
+            // // 복사() 참조()
+            // int num1 = 1;
+            // int num2 = 3;
+            //
+            // int resualt1;
+            // int resualt2;
+            //
+            // Divide(num1, num1, out resualt1, out resualt2);
+            //
+            // // 박싱 제거용 ToString 유효~!
+            // Console.WriteLine($"{resualt1.ToString()} {resualt2.ToString()}");
+        // }
+
+        #endregion
+
+        #region 재귀
+        
+        // static int Factorial(int n)
+        // {
+        //     return n == 1 ?
+        //         n :
+        //         n * Factorial(n - 1);
+        // }
+        
         #endregion
     }
 }
