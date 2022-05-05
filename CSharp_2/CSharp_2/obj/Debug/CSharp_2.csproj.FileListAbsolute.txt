@@ -1,0 +1,7 @@
+D:\Git_Memory\CS_Learn\CSharp_2\CSharp_2\bin\Debug\CSharp_2.exe
+D:\Git_Memory\CS_Learn\CSharp_2\CSharp_2\bin\Debug\CSharp_2.pdb
+D:\Git_Memory\CS_Learn\CSharp_2\CSharp_2\obj\Debug\CSharp_2.csproj.AssemblyReference.cache
+D:\Git_Memory\CS_Learn\CSharp_2\CSharp_2\obj\Debug\CSharp_2.csproj.SuggestedBindingRedirects.cache
+D:\Git_Memory\CS_Learn\CSharp_2\CSharp_2\obj\Debug\CSharp_2.csproj.CoreCompileInputs.cache
+D:\Git_Memory\CS_Learn\CSharp_2\CSharp_2\obj\Debug\CSharp_2.exe
+D:\Git_Memory\CS_Learn\CSharp_2\CSharp_2\obj\Debug\CSharp_2.pdb
