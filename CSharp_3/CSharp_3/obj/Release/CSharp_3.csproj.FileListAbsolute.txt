@@ -1,0 +1,7 @@
+D:\Git_Memory\CS_Learn\CSharp_3\CSharp_3\bin\Release\CSharp_3.exe
+D:\Git_Memory\CS_Learn\CSharp_3\CSharp_3\bin\Release\CSharp_3.pdb
+D:\Git_Memory\CS_Learn\CSharp_3\CSharp_3\obj\Release\CSharp_3.csproj.AssemblyReference.cache
+D:\Git_Memory\CS_Learn\CSharp_3\CSharp_3\obj\Release\CSharp_3.csproj.SuggestedBindingRedirects.cache
+D:\Git_Memory\CS_Learn\CSharp_3\CSharp_3\obj\Release\CSharp_3.csproj.CoreCompileInputs.cache
+D:\Git_Memory\CS_Learn\CSharp_3\CSharp_3\obj\Release\CSharp_3.exe
+D:\Git_Memory\CS_Learn\CSharp_3\CSharp_3\obj\Release\CSharp_3.pdb
