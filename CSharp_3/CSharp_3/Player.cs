@@ -34,18 +34,74 @@ namespace CSharp_3
             PosX = posX;
             _board = board;
 
+            BFS();
+        }
+
+        private void BFS()
+        {
+            int[] deltaY = new int[] {-1, 0, 1, 0};
+            int[] deltaX = new int[] {0, -1, 0, 1};
+            
+            bool[,] found = new bool[_board.Size, _board.Size];
+            Pos[,] parent = new Pos[_board.Size, _board.Size];
+
+            Queue<Pos> q = new Queue<Pos>();
+            q.Enqueue(new Pos(PosY, PosX));
+            found[PosY, PosX] = true;
+            parent[PosY, PosX] = new Pos(PosY, PosX);
+            
+            while (q.Count > 0)
+            {
+                Pos pos = q.Dequeue();
+                int nowY = pos.Y;
+                int nowX = pos.X;
+
+                for (int i = 0; i < 4; i++)
+                {
+                    int nextY = nowY + deltaY[i];
+                    int nextX = nowX + deltaX[i];
+                    if (nextX < 0 || nextX >= _board.Size || nextY < 0 || nextY >= _board.Size) 
+                        continue;
+                    if(_board.Tile[nextY,nextX] == Board.TileType.Wall)
+                        continue;
+                    if(found[nextY,nextX])
+                        continue;
+
+                    q.Enqueue(new Pos(nextY, nextX));
+                    found[nextY, nextX] = true;
+                    parent[nextY, nextX] = new Pos(nowY, nowX);
+                }
+            }
+
+            int y = _board.DestY;
+            int x = _board.DestX;
+            while (parent[y, x].Y != y || parent[y, x].X != x)
+            {
+                _point.Add(new Pos(y, x));
+                Pos pos = parent[y, x];
+                y = pos.Y;
+                x = pos.X;
+            }
+
+            _point.Add(new Pos(y, x));
+            _point.Reverse();
+        }
+
+        private void RightHand()
+        {
             // 방향기준 목표 변화
-			int[] frontY = new int[] { -1, 0, 1, 0 };
-			int[] frontX = new int[] { 0, -1, 0, 1 };
-			int[] rightY = new int[] { 0, -1, 0, 1 };
-			int[] rightX = new int[] { 1, 0, -1, 0 };
+            int[] frontY = new int[] { -1, 0, 1, 0 };
+            int[] frontX = new int[] { 0, -1, 0, 1 };
+            int[] rightY = new int[] { 0, -1, 0, 1 };
+            int[] rightX = new int[] { 1, 0, -1, 0 };
 
             _point.Add(new Pos(PosY, PosX));
+            
             // 목적지 도착 전까지 계속 실행
-            while (PosY != board.DestY || PosX != board.DestX) 
+            while (PosY != _board.DestY || PosX != _board.DestX) 
             {
                 // 1. 바라보는 방향 기준 오른쪽 가능한지 확인
-                if (board.Tile[PosY + rightY[_dir], PosX + rightX[_dir]] == Board.TileType.Empty)
+                if (_board.Tile[PosY + rightY[_dir], PosX + rightX[_dir]] == Board.TileType.Empty)
                 {
                     // 오른쪽 방향 90도 회전
                     _dir = (_dir - 1 + 4) % 4;
@@ -56,7 +112,7 @@ namespace CSharp_3
                     _point.Add(new Pos(PosY, PosX));
                 }
                 // 바라보는 방향으로 전진할 수 있는지 확인
-                else if (board.Tile[PosY + frontY[_dir], PosX + frontX[_dir]] == Board.TileType.Empty) 
+                else if (_board.Tile[PosY + frontY[_dir], PosX + frontX[_dir]] == Board.TileType.Empty) 
                 {
                     // 앞으로 한칸 전진
                     PosY = PosY + frontY[_dir];
