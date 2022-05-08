@@ -1,0 +1,7 @@
+D:\Git_Memory\CS_Learn\CSharp_3\Exercise\bin\Debug\Exercise.exe
+D:\Git_Memory\CS_Learn\CSharp_3\Exercise\bin\Debug\Exercise.pdb
+D:\Git_Memory\CS_Learn\CSharp_3\Exercise\obj\Debug\Exercise.csproj.AssemblyReference.cache
+D:\Git_Memory\CS_Learn\CSharp_3\Exercise\obj\Debug\Exercise.csproj.SuggestedBindingRedirects.cache
+D:\Git_Memory\CS_Learn\CSharp_3\Exercise\obj\Debug\Exercise.csproj.CoreCompileInputs.cache
+D:\Git_Memory\CS_Learn\CSharp_3\Exercise\obj\Debug\Exercise.exe
+D:\Git_Memory\CS_Learn\CSharp_3\Exercise\obj\Debug\Exercise.pdb
