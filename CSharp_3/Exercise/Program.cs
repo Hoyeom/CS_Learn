@@ -41,7 +41,7 @@ namespace Exercise
                 int now = -1;
                 for (int i = 0; i < 6; i++)
                 {
-                    // 이미 방문한 정점은 스킵
+                    // 이미 좋은 후보인 정점은 스킵
                     if(visited[i])
                         continue;
                     // 아직 발견(예약)된 적 없거나, 기존 후보보다 멀면 스킵

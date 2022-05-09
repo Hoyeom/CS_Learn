@@ -1,0 +1,7 @@
+D:\Git_Memory\CS_Learn\CSharp_3\GraphExercise\bin\Debug\GraphExercise.exe
+D:\Git_Memory\CS_Learn\CSharp_3\GraphExercise\bin\Debug\GraphExercise.pdb
+D:\Git_Memory\CS_Learn\CSharp_3\GraphExercise\obj\Debug\GraphExercise.csproj.AssemblyReference.cache
+D:\Git_Memory\CS_Learn\CSharp_3\GraphExercise\obj\Debug\GraphExercise.csproj.SuggestedBindingRedirects.cache
+D:\Git_Memory\CS_Learn\CSharp_3\GraphExercise\obj\Debug\GraphExercise.csproj.CoreCompileInputs.cache
+D:\Git_Memory\CS_Learn\CSharp_3\GraphExercise\obj\Debug\GraphExercise.exe
+D:\Git_Memory\CS_Learn\CSharp_3\GraphExercise\obj\Debug\GraphExercise.pdb
